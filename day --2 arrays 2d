@@ -1,1 +1,56 @@
+//problem-->1
+making of 2d array only "cin"
+ #include <iostream>
+ using namespace std;
 
+ int main(){
+    int arr[2][2];
+     for (int i = 1;i <=2; i++){
+        for(int j = 1; j <= 2; j++){
+             cin>>arr[i][j];
+         }
+     }
+ }
+
+
+//problem-->1
+//making of 2d array "cout"
+
+#include <iostream>
+ using namespace std;
+
+ int main(){
+    int arr[2][2];
+    for (int i = 1;i <=2; i++){
+        for(int j = 1; j <= 2; j++){
+            cin>>arr[i][j];
+        }
+        
+    }
+    cout<<"here is ypur 2 day array"<<"\n";
+    for (int i = 1;i <=2; i++){
+        for(int j = 1; j <= 2; j++){
+            cout<<arr[i][j]<<" ";
+     
+ }
+ cout<<"\n";
+ return 0;
+}
+ }
+
+                                   leet code
+
+
+class Solution {
+public:
+    vector<int> twoSum(vector<int>& nums, int target) {
+        for(int i = 0; i<nums.size(); i++){
+            for(int j=i+1; j<nums.size(); j++){
+                if(nums[i]+nums[j] == target){
+                    return {i,j};
+                }
+            }
+        }
+        return {};
+     }  
+    };
